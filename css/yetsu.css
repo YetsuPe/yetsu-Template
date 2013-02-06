@@ -1,119 +1,31 @@
-header {
-  max-height: 50px;
-}
-.logotipo {
-  background-color: #fff;
-  position: relative;
-}
-.reds.fb {
-  color: #3b5998;
-}
-.reds.youtube {
-  color: #9e2623;
-}
-.reds.gplus {
-  color: #bb3317;
-}
-.img_flex {
-  width: 100%;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-}
-.no-hidden {
-  overflow: visible !important;
-}
-.tittle {
-  position: relative;
-  left: -12%;
-}
-.lazo {
-  position: relative;
-  z-index: 6;
-  min-height: 150px;
-}
-.lazo:before {
-  content: ' ';
-  position: absolute;
-  display: block;
-  height: 45px;
-  border-width: 50px;
-  border-style: solid;
-  border-color: #232323 #232323 transparent;
-}
-.lazo:after {
-  content: ' ';
-  position: absolute;
-  width: 0;
-  height: 0;
-  left: 0px;
-  top: 100%;
-  border-width: 5px 10px;
-  border-style: solid;
-  border-color: #666 #666 transparent transparent;
-}
-.lazo img {
-  top: 10px;
-  position: relative;
-  left: 15px;
-}
-.fix {
-  overflow: hidden;
-}
-.logo {
-  position: relative;
-}
-.logo:before {
-  content: ' ';
-  position: absolute;
-  width: 30px;
-  height: 0;
-  left: -30px;
-  top: 12px;
-  border-width: 20px 10px;
-  border-style: solid;
-  border-color: #999 #999 #999 transparent;
-}
-.logo:after {
-  content: ' ';
-  position: absolute;
-  width: 0;
-  height: 0;
-  left: 0px;
-  top: 100%;
-  border-width: 5px 10px;
-  border-style: solid;
-  border-color: #666 #666 transparent transparent;
-}
-.block {
-  display: block !important;
-}
-.paddingx0 {
-  padding: 0 !important;
-}
-#map {
-  height: 170px;
-}
-#off-air-contact {
-  display: none;
-}
-.marco-foto.rounded {
-  border-radius: 15px;
-}
-.marco-foto.white {
-  border: 2px dashed #fff;
-}
-.marco-foto.black {
-  border: 2px dashed #000;
-}
-.marco-foto.theme {
-  border: 3px dashed #16a6b6;
-}
-.rounded {
-  border-radius: 15px;
-}
-.rounded-2 {
-  border-radius: 0 0 15px 15px !important;
-}
+header{max-height:50px}
+.logotipo{background-color:#fff;position:relative}
+.reds.fb{color:#3b5998}
+.reds.youtube{color:#9e2623}
+.reds.gplus{color:#bb3317}
+.img_flex{width:100%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-o-box-sizing:border-box;-ms-box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box}
+.box-sizing{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box}
+.no-hidden{overflow:visible !important}
+.tittle{position:relative;left:-12%}
+.lazo{position:relative;z-index:6;min-height:150px;}
+.lazo:before{content:' ';position:absolute;display:block;height:45px;border-width:50px;border-style:solid;border-color:#232323 #232323 transparent}
+.lazo:after{content:' ';position:absolute;width:0;height:0;left:0;top:100%;border-width:5px 10px;border-style:solid;border-color:#666 #666 transparent transparent}
+.lazo img{top:10px;position:relative;left:15px}
+.fix{overflow:hidden}
+.logo{position:relative;}
+.logo:before{content:' ';position:absolute;width:30px;height:0;left:-30px;top:12px;border-width:20px 10px;border-style:solid;border-color:#999 #999 #999 transparent}
+.logo:after{content:' ';position:absolute;width:0;height:0;left:0;top:100%;border-width:5px 10px;border-style:solid;border-color:#666 #666 transparent transparent}
+.block{display:block !important}
+.paddingx0{padding:0 !important}
+#map{height:170px}
+#off-air-contact{display:none}
+.marco-foto.rounded{-webkit-border-radius:15px;-moz-border-radius:15px;-ms-border-radius:15px;-o-border-radius:15px;border-radius:15px}
+.marco-foto.white{border:2px dashed #fff}
+.marco-foto.black{border:2px dashed #000}
+.marco-foto.theme{border:3px dashed #16a6b6}
+.rounded{-webkit-border-radius:15px;-moz-border-radius:15px;-ms-border-radius:15px;-o-border-radius:15px;border-radius:15px}
+.rounded-2{-webkit-border-radius:0 0 15px 15px !important;-moz-border-radius:0 0 15px 15px !important;-ms-border-radius:0 0 15px 15px !important;-o-border-radius:0 0 15px 15px !important;border-radius:0 0 15px 15px !important}
+.perfect-rounded{-webkit-border-radius:50%;-moz-border-radius:50%;-ms-border-radius:50%;-o-border-radius:50%;border-radius:50%}
+.border-pic{border:4px solid #16a6b6}
+.box-num{width:70px;height:70px}
+.box-center{display:block;margin:0 auto}

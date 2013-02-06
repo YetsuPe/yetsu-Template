@@ -10,7 +10,6 @@ $(document).ready(function() {
 	var cricket = $("#two .bg");
 	
 	var windowHeight = $window.height();
-	console.log(windowHeight);
 	
 	$('#one, #two, #three, #four').bind('inview', function (event, visible) {
 		if (visible == true) {
@@ -31,26 +30,51 @@ $(document).ready(function() {
 	function movePos(x, windowHeight, pos, offset, speed){
 		return x + "% " + (-((windowHeight + pos) - offset) * speed)  + "px";
 	}
+	function height () {
+		var widthScreen=window.innerWidth;
+		var heigthScreen=window.innerHeight;
+		
+		if (widthScreen>768){ 
+			return ( '100px ') ;
+			//console.log(widthScreen +' x '+ heigthScreen);
+		}else{
+
+			return '20px !important';
+		}
+	}
+	function alto(){
+		var alto =windowHeight-621; //obtener top
+		if(alto>=0){
+			return alto;
+		}else{
+			return 0 ;
+		}
+	}
 	
 	function Parallax(){ 
 		var pos = $window.scrollTop(); 
-		var alto =windowHeight-621; //obtener top
+		
 		if($one.hasClass("inview")){
 			$one.css({
-				'backgroundPosition': "50% "+ alto+'px ',
-				'height' : windowHeight+'px ' 
+				'backgroundPosition': "50% "+ alto()+'px ',
+				'padding-bottom' : height() 
 			}); 
 		}
 		if($two.hasClass("inview")){
-			$two.css({'backgroundPosition': movePos(50, windowHeight, pos, 1250, 0.3)});
+			$two.css({
+				'backgroundPosition': movePos(50, windowHeight, pos, 1250, 0.3)
+			});
 			cricket.css({'backgroundPosition': movePos(20, windowHeight, pos, 1900, 0.6)});
 		}
 		if($three.hasClass("inview")){
-			$three.css({'backgroundPosition': movePos(50, windowHeight, pos, 2850, 0.3)});
+			$three.css({
+				'backgroundPosition': movePos(50, windowHeight, pos, 2260, 0.3)
+			});
 		}
 		
 		if($four.hasClass("inview")){
-			$four.css({'backgroundPosition': movePos(0, windowHeight, pos, 200, 0.9) + ", " + movePos(50, windowHeight, pos, 0, 0.7) + ", " + movePos(50, windowHeight, pos, 0, 0.5) + ", " + movePos(50, windowHeight, pos, 3700, 0.3)});
+			$four.css({
+				'backgroundPosition': movePos(0, windowHeight, pos, 200, 0.9) + ", " + movePos(50, windowHeight, pos, 0, 0.7) + ", " + movePos(50, windowHeight, pos, 0, 0.5) + ", " + movePos(50, windowHeight, pos, 3700, 0.3)});
 		}
 		
 	}

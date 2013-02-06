@@ -12,19 +12,20 @@
 #one {
 	background:url(../images/landing-yetsu.jpg) 50% 0 no-repeat fixed #0D9AF6;
 	color: #FFF;
-	height:600px;
+	/*height:600px;*/
 	margin: 0;
-	padding-bottom: 150px;	
+	/*padding-bottom: 150px;	*/
 }
 
 #two {
 	/*background:url(../images/Publucidad-Yetsu.jpg) 50% 0 no-repeat fixed #83E8F4;*/
 	background: #8FA449;
 	color: #FFF;
-	height: 1300px;
+	/*height: 1300px;*/
 	margin: 0 auto;
 	overflow: hidden;
-	padding: 50px;	
+	padding-bottom: 20px;
+  padding-top: 20px;	
 }
 
 #one .anim {
@@ -38,14 +39,17 @@
 }
 
 #three {
-	background:url(../images/yetsu4.jpg) 50% 0 no-repeat fixed;
-	color: #FFF;
-	height:650px;
-	padding:  50px;         /* 100px 0 0 0	*/
+	/*background:url(../images/yetsu4.jpg) 50% 0 no-repeat fixed;
+	color: #FFF;*/
+	/*height:650px;*/
+	/*padding-bottom:  50px;          100px 0 0 0	*/
+  /*background: #000000 ;*/
+  min-height: 700px;
 }
 
 #four {
-	background:url(../images/200px/Ninja0.png), url(../images/200px/Ninja1.png);
+	/*background:url(../images/200px/Ninja0.png), url(../images/200px/Ninja1.png);*/
+  background-color: #DD9C55;
 	background-position: 50% 0, 50% 0, 50% 0, 50% 0;
 	background-attachment: fixed;
 	background-repeat: repeat, repeat, repeat, no-repeat;
@@ -64,6 +68,9 @@
 .min-heigth-tag{
 	min-height: 200px;
 }
+.shadow-html5{
+  text-shadow:0px 0px 0 rgb(182,7,-56),1px 1px 0 rgb(148,-27,-90),2px 2px 0 rgb(114,-61,-124), 3px 3px 0 rgb(80,-95,-158),4px 4px 3px rgba(0,0,0,0.4),4px 4px 1px rgba(0,0,0,0.5),0px 0px 3px rgba(0,0,0,.2);
+ }
 /**************************Iconos ***************************/
 
 
