@@ -3,7 +3,7 @@
 $(document).ready(function() {
 
 	var $window = $(window);
-	var $one = $('#one');
+	var $home = $('#home');
 	var $two = $('#two');
 	var $three = $('#three');
 	var $four = $('#four');
@@ -11,7 +11,7 @@ $(document).ready(function() {
 	
 	var windowHeight = $window.height();
 	
-	$('#one, #two, #three, #four').bind('inview', function (event, visible) {
+	$('#home, #two, #three, #four').bind('inview', function (event, visible) {
 		if (visible == true) {
 			$(this).addClass("inview");
 			} else {
@@ -33,14 +33,17 @@ $(document).ready(function() {
 	function height () {
 		var widthScreen=window.innerWidth;
 		var heigthScreen=window.innerHeight;
-		
+		var altoHome = $home.height() ;
 		if (widthScreen>768){ 
-			return ( '100px ') ;
-			//console.log(widthScreen +' x '+ heigthScreen);
+			if (heigthScreen> altoHome ) {
+				var res = heigthScreen-altoHome;
+				return (res+'px');
+			}else{
+				return ('20px');
+			}
 		}else{
-
-			return '20px !important';
-		}
+			return ('20px !important');
+		};
 	}
 	function alto(){
 		var alto =windowHeight-621; //obtener top
@@ -53,10 +56,10 @@ $(document).ready(function() {
 	
 	function Parallax(){ 
 		var pos = $window.scrollTop(); 
-		
-		if($one.hasClass("inview")){
-			$one.css({
-				'backgroundPosition': "50% "+ alto()+'px ',
+		var alto =windowHeight-621; //obtener top
+		if($home.hasClass("inview")){
+			$home.css({
+				'backgroundPosition': "50% "+ alto+'px ',
 				'padding-bottom' : height() 
 			}); 
 		}

@@ -9,7 +9,7 @@
 	margin: 0 0 15px 0;	
 }
 
-#one {
+#home {
 	background:url(../images/landing-yetsu.jpg) 50% 0 no-repeat fixed #0D9AF6;
 	color: #FFF;
 	/*height:600px;*/
@@ -17,9 +17,9 @@
 	/*padding-bottom: 150px;	*/
 }
 
-#two {
+#works {
 	/*background:url(../images/Publucidad-Yetsu.jpg) 50% 0 no-repeat fixed #83E8F4;*/
-	background: #8FA449;
+	/*background: #8FA449;*/
 	color: #FFF;
 	/*height: 1300px;*/
 	margin: 0 auto;
@@ -28,7 +28,7 @@
   padding-top: 20px;	
 }
 
-#one .anim {
+#home.anim {
 	background:url(../images/150px/Ninja0.png) 20% 0 no-repeat fixed;*/
 	height: 150px;
 	/*margin: 0 auto;
@@ -38,7 +38,7 @@
 	z-index: 200;
 }
 
-#three {
+#courses {
 	/*background:url(../images/yetsu4.jpg) 50% 0 no-repeat fixed;
 	color: #FFF;*/
 	/*height:650px;*/
@@ -47,21 +47,28 @@
   min-height: 700px;
 }
 
-#four {
-	/*background:url(../images/200px/Ninja0.png), url(../images/200px/Ninja1.png);*/
+#us {
+	/*background:url(../images/200px/Ninja0.png), url(../images/200px/Ninja1.png);
   background-color: #DD9C55;
 	background-position: 50% 0, 50% 0, 50% 0, 50% 0;
 	background-attachment: fixed;
-	background-repeat: repeat, repeat, repeat, no-repeat;
+	background-repeat: repeat, repeat, repeat, no-repeat;*/
+  background: #29ce73; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #29ce73 0%, #25c48a 50%, #6a8cc4 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#29ce73), color-stop(50%,#25c48a), color-stop(100%,#6a8cc4)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover, #29ce73 0%,#25c48a 50%,#6a8cc4 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover, #29ce73 0%,#25c48a 50%,#6a8cc4 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover, #29ce73 0%,#25c48a 50%,#6a8cc4 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center, #29ce73 0%,#25c48a 50%,#6a8cc4 100%); /* W3C */
 	color: #FFF;
 	height: 1300px;
 	padding: 100px 0 0 0;
 	padding: 100px 0 0 0; 	
 }
 
-#five {
+#contact {
 	background:url(../images/Publucidad-Yetsu.jpg) 50% 0 no-repeat fixed #83E8F4;
-	height: 1000px;
+	min-height: 1000px;
 	margin: 0 auto;
 	padding: 40px 0 0 0;
 }
@@ -168,4 +175,55 @@
   .btn .icon-spin.icon-large {
     height: .75em;
   }
+}
+
+
+/*********************cloud*****************************/
+#cloud {
+  width: 350px; height: 120px;
+  
+  background: #F4FEFF;
+  
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  
+  position: relative;
+  margin: 120px auto 20px;
+}
+
+#cloud:after, #cloud:before {
+  content: '';
+  position: absolute;
+  background: #F4FEFF;
+  z-index: 2
+}
+
+#cloud:after {
+  width: 100px; height: 100px;
+  top: -50px; left: 50px;
+  
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+}
+
+#cloud:before {
+  width: 180px; height: 180px;
+  top: -90px; right: 50px;
+  
+  border-radius: 200px;
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+}
+
+.box_3{
+  background-color: white;
+  padding-top: 30px ;
+  position: relative;
+  top: -30px ;
+  border : 2px solid #16a6b6;
+}
+.timeline{
+  background : url('../images/content/timeline-center-bar.png') repeat;
 }
