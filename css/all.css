@@ -1047,7 +1047,10 @@ body {
 /* ====================== NAVIGATION ====================== */
 /* ====================== BACKGROUNDS ====================== */
 /* ====================== TEXT ====================== */
-/* ===================== BORDER=======================*/
+/* ===================== BORDER=======================
+  & .border
+    & .theme
+      border : 2px solid color*/
 /* ====================== FORM ====================== */
 /* ====================== TABLE ====================== */
 /* ====================== BUTTONS ====================== */
@@ -1235,6 +1238,9 @@ body .bck.image.landing-yetsu {
   -o-background-size: cover;
   background-size: cover;
 }
+body .text.espaced {
+  line-height: 1.5em;
+}
 body .text.shadow {
   -webkit-text-shadow: 1px 1px 1px rgba(0,0,0,0.9);
   -moz-text-shadow: 1px 1px 1px rgba(0,0,0,0.9);
@@ -1268,9 +1274,6 @@ body .text.color.html5 {
 }
 body .text.color.android {
   color: #97c03e;
-}
-body .border .theme {
-  border: 2px solid #16a6b6;
 }
 body form input[type="text"],
 body .form input[type="text"],
@@ -1338,19 +1341,24 @@ body .form textarea.rounded {
 body table {
   background: #fff;
   color: #333;
-  border: 1px solid #ddd;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-  border-radius: 3px;
+  border: 1px solid #8f8f8d;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
 }
 body table tr:nth-child(even) td {
   background-color: #f9f9f9;
 }
 body table th {
-  background-color: #eee;
-  color: #222;
+  background-color: rgba(22,166,182,0.9);
+  color: #f8ff00;
+  -webkit-text-shadow: 1px 1px 2px #000;
+  -moz-text-shadow: 1px 1px 2px #000;
+  -ms-text-shadow: 1px 1px 2px #000;
+  -o-text-shadow: 1px 1px 2px #000;
+  text-shadow: 1px 1px 2px #000;
 }
 body table td.highlight {
   background-color: #16a6b6 !important;
@@ -1531,7 +1539,10 @@ header {
   color: #cd2126;
 }
 .reds.github {
-  color: #a2a2a0;
+  color: #333;
+}
+.reds.github_white {
+  color: #fff;
 }
 .img_flex {
   width: 100%;
@@ -1687,6 +1698,20 @@ header {
   -o-border-radius: 30px;
   border-radius: 30px;
 }
+.rounded-left-teacher {
+  -webkit-border-radius: 80px 15px 0 15px;
+  -moz-border-radius: 80px 15px 0 15px;
+  -ms-border-radius: 80px 15px 0 15px;
+  -o-border-radius: 80px 15px 0 15px;
+  border-radius: 80px 15px 0 15px;
+}
+.rounded-right-teacher {
+  -webkit-border-radius: 15px 80px 15px 0;
+  -moz-border-radius: 15px 80px 15px 0;
+  -ms-border-radius: 15px 80px 15px 0;
+  -o-border-radius: 15px 80px 15px 0;
+  border-radius: 15px 80px 15px 0;
+}
 .perfect-rounded {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1718,6 +1743,9 @@ header {
   -ms-box-shadow: 0 0 1px 2px #000 inset;
   -o-box-shadow: 0 0 1px 2px #000 inset;
   box-shadow: 0 0 1px 2px #000 inset;
+}
+#footerHome {
+  position: relative;
 }
 form input[type="text"],
 .form input[type="text"],

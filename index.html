@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="css/all.css">
     <!--Yeticons-->
     <link rel="stylesheet" href="css/font-icons.css" />
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/favicon-yetsu.ico">
 
-    <link href="css/parallax.css" rel="stylesheet" type="text/css" />
+    <link href="css/parallax.css" rel="stylesheet" />
     <meta property="og:title" content="Yetsu | Tecnología para tu Empresa" />
     <meta property="og:type" content="company" />
     <meta property="og:url" content="http://yetsu.com/" />
@@ -39,7 +41,7 @@
 <ul id="nav">
 	<li>
         <a href="#home" title="Siguiente">
-            <div class="option-menu bck white rounded perfect-rounded text color white select"></div> 
+            <div class="option-menu bck white rounded perfect-rounded text color white"></div> 
         </a>
     </li>
     <li>
@@ -53,11 +55,6 @@
         </a>
     </li>
     <li>
-        <a href="#us" title="Siguiente">
-           <div class="option-menu bck white rounded perfect-rounded text color white"></div>  
-        </a>
-    </li>
-    <li>
         <a href="#contact" title="Siguiente">
            <div class="option-menu bck white rounded perfect-rounded text color white"></div>  
         </a>
@@ -67,35 +64,25 @@
 
 
 <div id="home">
-    <header class="bck dark">
+    <header class="bck yetsu-dark">
         <div class="row">
             <div class="column_3"><h1 class="text color white">YETSU</h1></div>
             <nav class="column_8 group text bold show-screen">
                 <a href="#home" class="active"><span class="icon-home"></span></a>
                 <a href="#works"><span class="icon-picture"></span>Portafolio</a>
                 <a href="#courses"><span class="icon-html5"></span>Cursos</a>
-                <a href="#us"><span class="icon-html5"></span>Nosotros</a>
                 <a href="#contact"><span class="icon-bubbles "></span>Contactanos</a>
             </nav>
         </div>
     </header>
 	<section>
-        <div class="row">
-            <div class="column_4 offset_8 bck dark text center rounded-bottom">
-                <i class="icon-facebook icon-2x reds fb"></i>
-                <i class="icon-pinterest icon-2x reds pinterest "></i>
-                <i class="icon-twitter icon-2x reds twitter "></i>
-                <i class="icon-google-plus icon-2x reds gplus"></i>
-                <i class="icon-github icon-2x reds github "></i>
-            </div>
-        </div>
-        <div class="row">
+        <div class="row margin_top">
             <div class="column_2 bck sky-tag-yetsu rounded text center padding_top padding_bottom">
                 <h5 class="text color black italic">Paginas Web</h5>
                 <i class="icon-html5 icon-4x text color html5 block"></i>
                 <button class="rounded">Detalles</button>
             </div>
-            <div class="column_2 bck sky-tag-yetsu rounded text center padding_top padding_bottom">
+            <div class="column_2 bck sky-tag-yetsu rounded text center padding_top padding_bottom offset_8">
                 <h5 class="text color black italic">Sistemas Web</h5>
                 <i class="icon-code icon-4x text color black block"></i>
                 <button class="rounded">Detalles</button>
@@ -107,7 +94,7 @@
                 <i class="icon-stats  icon-4x block text color theme "></i>
                 <button class="rounded">Detalles</button>
             </div>
-            <div class="column_2 bck sky-tag-yetsu margin_top rounded text center padding_top padding_bottom ">
+            <div class="column_2 bck sky-tag-yetsu margin_top rounded text center padding_top padding_bottom offset_8 ">
                 <h5 class="text color black italic  ">Adiestramiento</h5>
                 <i class="icon-user-3  icon-4x block text color black "></i>
                 <button class="rounded">Detalles</button>
@@ -122,7 +109,7 @@
             <div class="column_3">
                 <img src="images/150px/Ninja-Logo1.png" alt="nuestra MAscota">
             </div>
-            <div class="column_4 offset_3 bck white rounded box-sizing padding">
+            <div class="column_4 offset_3 bck white rounded box-sizing padding margin_top">
                 <h2 class="text center color theme bold ">Somos Yetsu</h2>
                 <p class="text color black italic justify">
                      Si podemos ayudarlo de cualquier manera en sus proyectos, no dude en contactarnos. Asesoramos a nuestros clientes de principio a fin, desde el levantamiento y modelado del negocio, hasta la implementación del sistema
@@ -130,9 +117,19 @@
             </div>
         </div>
     </section>
+    <footer class="bck yetsu-dark " id="footerHome">
+        <div class="row text center padding_top padding_bottom">
+                <a href="https://facebook.com/YetsuPe"><i class="icon-facebook icon-2x reds fb"></i></a>
+                <a href="http://pinterest.com/yetsupe/"><i class="icon-pinterest icon-2x reds pinterest "></i></a>
+                <a href="https://twitter.com/YetsuPe"><i class="icon-twitter icon-2x reds twitter "></i></a>
+                <a href="https://plus.google.com/113323301605684841055" rel="publisher"><i class="icon-google-plus icon-2x reds gplus"></i></a>
+                <a href="https://github.com/YETSU"><i class="icon-github icon-2x reds github_white "></i></a>
+            </div>
+        </div>
+    </footer>
 </div> 
 
-<div id="works" class="bck image pattern-dark5">
+<div id="works">
     <div class="row ">
         <div class="column_12 text center bck theme rounded">
             <h3 class="text center color white ">Portafolio</h3>
@@ -160,194 +157,115 @@
             <h4>"Desarrollo de Aplicaciones Web"</h4>
         </div>
         <div class="column_7 bck white padding box-sizing">
-            <p>Te encanta la web, te gusta la tecnología y quieres aportar al mundo de desarrolladores
+            <p class="text espaced">Te encanta la web, te gusta la tecnología y quieres aportar al mundo de desarrolladores
             de la web, está es tu oportunidad de empezar y reforzar conocimientos, te enseñaremos
-            y daremos las herramientas necesarias para ser un Jedi de desarrollo web, Te ofrecemos 
+            y daremos las herramientas necesarias para ser un Jedi del desarrollo web, Te ofrecemos 
             HTML5, CSS3,Js,Jquery,Pyhon,Node.js y más temas de la web. 
             </p>
-            <p class="margin_bottom">Tanto la teoría como empezar a implementarlo teniendo 
+            <p class="margin_bottomtext espaced">Tanto la teoría como empezar a implementarlo teniendo 
             en cuenta buenas practicas de FrontEnd y Backend.</p>
-            <button class="box-center block margin_bottom">
+            <a class="button box-center block margin_bottom" href='curso/Diplomado--Desarrollo-de-Aplicaciones-Web-Yetsu-UNPRG-2013.pdf'>
                 Descarga todos los temas del curso 
-            </button>
-            <button class="box-center block ">
-                Precio
-            </button>
+            </a>
         </div>
-
-        <!--<div class="column_6">
-            <h5 class=" text italic center left">Docentes :</h5>
-            <div class="row">
-                <div class="column_3">
-                    <img src="images/skeiter9.jpg" alt="@skeiter9" class="perfect-rounded border-pic"/>
-                </div>
-                <div class="column_3">
-                    <img src="images/pilmee.jpg" alt="@pilmee" class="perfect-rounded border-pic"/>
-                </div>
-            </div>
-        </div>-->
-        <!--<div class="column_12 text center rounded bck white margin_top">
-            <p class="text color black">
-                Modulos:
-            </p>
-
-            <ul class="column_3">
-                <li>HTML5 + CSS3 + JS(B)</li>
-                    <ul class="text right">
-                        <li>Servidores web</li>
-                        <li>Maquetacion Web</li>
-                        <li>Animaciones Css3</li>
-                        <li>Responsive Design</li>
-                        <li>Apis Html5</li>
-                        <li>Preprocesadores y Frameworks CSS</li>
-                        <li>... Miniproyecto</li>
-                    </ul>
-                <li>JS + Jquery + Jquery Mobile</li>
-                <li>Python y Django</li>
-                <li>Node.js y Express</li>
-            </ul>
-        </div>   -->
     </div>
     <div class="row bck glass timeline">
-        <div class="column_6 text center">
-            <span class="box-num perfect-rounded border-pic bck white box-center text extra-big color html5">1</span>
-            <div class="box_3 rounded">
-                <p class="text color html5 margin_bottom">HTML5+CSS3 +Js(B)</p>
-                jojojlorem  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam consectetur temporibus provident ratione nobis vel quos quia sunt debitis quasi! Architecto deleniti quo debitis quos incidunt magni dicta voluptas est.
-            </div>
-        </div>
-        <div class="column_6 text center">
-            <span class="box-num perfect-rounded border-pic bck white box-center text extra-big color html5">2</span>
-            <div class="box_3 rounded ">
-                <p class=" text  margin_bottom">Jquery + Jquery Mobile</p>
-                jojojlorem  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum nisi libero pariatur quod consequuntur omnis quis dolorem magnam laudantium quam fugiat necessitatibus accusamus delectus tempora sint voluptatibus inventore aut quisquam.
-            </div>
-        </div>
-        <div class="column_6 text center">
-            <span class="box-num perfect-rounded border-pic bck white box-center text extra-big color html5">3</span>
-            <div class="box_3 rounded ">
-                <p class=" text  margin_bottom">Python y Django</p>
-                jojojlorem  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium error beatae dolorum natus cum est deserunt quia labore ipsa alias neque dignissimos repellendus sit dicta tempora rerum voluptatem eius tenetur!
-            </div>
-        </div>
-        <div class="column_6 text center">
-            <span class="box-num perfect-rounded border-pic bck white box-center text extra-big color html5">4</span>
-            <div class="box_3 rounded ">
-                <p class=" text  margin_bottom">Node.js y Express</p>
-                jojojlorem  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit officia rerum assumenda neque cumque provident inventore harum ex dicta suscipit quos vel libero unde vitae fugit dolore error nisi sint.
-            </div>
-        </div>
-        <!--<div class="column_12 text center ">
+        <div class="column-12">
             <h5 class="text center"> Modulos </h5>
+        </div>
+        <div class="column_6 text center ">
             <div class="row bck white rounded-course">
                 <span class="column_1 box-num perfect-rounded border-pic bck white box-center text extra-big color html5">1</span>
-                <p class="column_2 text color html5 margin_top">HTML5+CSS3 +Js(B)</p>
+                <p class="column_4 text color big html5 margin_top">HTML5+CSS3 +Js(B)</p>
             </div>
-            <div class="row margin_top bck white rounded-course">
+        </div>
+        <div class="column_6 text center ">
+            <div class="row bck white rounded-course">
+                <p class="column_4 text color big html5 margin_top">Javascript + Jquery + Jequery Mobil</p>
                 <span class="column_1 box-num perfect-rounded border-pic bck white box-center text extra-big color html5">2</span>
-                <p class="column_2 text  margin_top">Jquery + Jquery Mobile</p>
+               
             </div>
-            <div class="row margin_top bck white rounded-course">
+        </div>
+        <div class="column_6 text center ">
+            <div class="row bck white rounded-course">
                 <span class="column_1 box-num perfect-rounded border-pic bck white box-center text extra-big color html5">3</span>
-                <p class="column_2 text  margin_top">Python y Django</p>
+                <p class="column_4 text color big html5 margin_top">Python y Django</p>
             </div>
-            <div class="row margin_top bck white rounded-course">
+        </div>
+        <div class="column_6 text center ">
+            <div class="row bck white rounded-course">
+                <p class="column_4 text color big html5 margin_top">Node.js + Express Js</p>
                 <span class="column_1 box-num perfect-rounded border-pic bck white box-center text extra-big color html5">4</span>
-                <p class="column_2 text  margin_top">Node.js y Express</p>
             </div>
-        </div>-->
+        </div>
     </div>
     <div class="row bck glass padding_bottom">
-        <div class="column_6 rounded bck white">
+        <div class="column_6 rounded bck white padding">
+            <h5 class="text center color theme">Costos</h5>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Matricula</th>
+                        <th>1 Mes</th>
+                        <th >2 Mes</th>
+                        <th >Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text center">S/ 30</td>
+                        <td class="text center">S/ 150</td>
+                        <td class="text center">S/ 150</td>
+                        <td class="text center">S/ 330</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class=" text center theme ">Pagos:</p>
+            <p class=" text center text shadow">N° CTA: 415-24193179-0-52 BCP</p>
+            <p class=" text center theme ">Inicio:</p>
+            <p class=" text center text shadow">9 de Marzo</p>
+            <p class=" text center theme ">Duración:</p>
+            <p class=" text center text shadow">2 meses</p>
+            <p class=" text center theme ">Horario:</p>
+            <p class=" text center text shadow">Sabados de 9am - 2pm</p>
+
+        </div>
+        
+        <div class="column_6 rounded bck white padding">
+            <img class="float left" src="images/certificado.jpg" alt="certificado del curso" title="Al finalizar el curso se les otorgara este polo"/>
+            <p class="text color theme center big">Se otorgara Certificado a nombre de la Escuela Profesional de ing. de Sistemas y Yetsu</p>
+            <img class="float right" src="images/polo-html5.jpg" alt="Polo del curso" title="Al finalizar el curso se les otorgara este polo"/>
+            <p class="text center margin_top_4">Al culminar el Curso se les obsequiara un polo conmemorativo</p>
+
+        </div>
+    </div>
+    <div class="row bck glass padding_bottom">
+        <div class="column_6 rounded-left-teacher bck white padding">
             <img src="images/skeiter9.jpg" alt="@skeiter9" class=" box-center perfect-rounded border-pic float left"/>
             <h5 class="text center"><a href="https://twitter/skietr9">@skeiter9</a></h5>
-            <p>Estudiante de Ingenieria de Sistemas de la UNPRG
-                -Delegado Fraterno De la UNPRG ante APEISC
-                -Miembro Colaborador de La Fundaciòn Mozilla en PERÙ
-                -Mienbro de PLUG(Peruvian linux user group)
-                -Presidente De CADIS - Cìrculo de Investigacion de la EPIS-_UNPRG
-                -Miembro oficial Internacional de la Comunidad de Ubuntu
+            <p class="text espaced">Estudiante de Ingenieria de Sistemas de la UNPRG, Delegado Fraterno De la UNPRG ante 
+                <a href="http://apeisc.org">APEISC</a>,
+                miembro Colaborador de La Fundaciòn<a href="mozilla.pe"> Mozilla en PERÙ</a>,
+                mienbro de PLUG ha participado dando talleres y charlas en USAT y UNPRG,
+                actual Presidente De CADIS - Cìrculo de Investigacion de la EPIS-UNPRG,
+                Miembro oficial Internacional de la Comunidad de Ubuntu.
             </p>
         </div>
-        <div class="column_6 rounded bck white">
+        <div class="column_6 rounded-right-teacher bck white padding">
             <img src="images/pilmee.jpg" alt="@pilmee" class=" box-center perfect-rounded border-pic float right"/>
             <h5 class="text center"><a href="https://twitter/pilmee">@pilmee</a></h5>
-            <p>Estudiante de Ingeniería de Sistemas y Computación en la Universidad Católica Santo 
+            <p class="text espaced">Estudiante de Ingeniería de Sistemas y Computación en la Universidad Católica Santo 
             Toribio de Mogrovejo.
-            Presidente de la Asociación de Estudiantes de Tecnologías Informáticas de Código
-            Abierto (EtiCA @eticagnu / www.eticagnu.org)
             Diseñador y Desarrollador web (Node.js, HTML5, PHP, etc.)
             Ha impartido charlas y talleres sobre Tecnología Web, en diversos eventos 
             informáticos.
             Participo como organizador en el CONEISC USAT 2012
             </p>
         </div>
-        <!--<div class="column_3 text center">
-            <div class="box-num perfect-rounded border-pic bck white box-center">
-                <span class="text extra-big color html5">2</span>
-            </div>
-            <div class="bck white rounded">
-                <h5 class="text color blue ">Js + Jquery +Jquery mobile</h5>
-                <ul class="text center">
-                    <li>...................</li>
-                    <li>...................</li>
-                    <li>...................</li>
-                    <li>...................</li>
-                    <li>...................</li>
-                    <li>...................</li>
-                    <li>...................</li>
-                    <li>...................</li>
-                </ul> 
-            </div>   
-        </div>
-        <div class="column_3 text center">
-            <div class="box-num perfect-rounded border-pic bck white box-center">
-                <span class="text extra-big color html5">3</span>
-            </div>
-            <div class="bck white rounded">
-                <h5 class="text color blue "> Python y Django</h5>
-                <ul class="text center">
-                    <li>Fundamentos de Programación</li>
-                    <li>Intalacion Webserver</li>
-                    <li>Práctica Algoritmos</li>
-                    <li>Cloud servers y recursos</li>
-                    <li>Librerias</li>
-                    <li>Django y su MVT</li>
-                    <li>... Miniproyecto</li>
-                </ul> 
-            </div>
-        </div>
-        <div class="column_3 text center">
-            <div class="box-num perfect-rounded border-pic bck white box-center">
-                <span class="text extra-big color html5">4</span>
-            </div>
-            <div class="bck white rounded">
-                <h5 class="text color blue ">Node.js y Express</h5>
-                <ul class="text center">
-                    <li>...................</li>
-                    <li>...................</li>
-                    <li>...................</li>
-                    <li>...................</li>
-                    <li>...................</li>
-                    <li>...................</li>
-                    <li>...................</li>
-                    <li>...................</li>
-                </ul> 
-            </div>
-        </div>-->
     </div>
     <section class="bck image pattern-dark3">
         
     </section>
-</div> 
-
-<div id="us">
-	<div class="row">
-        <div class="column_12 text center bck theme rounded">
-            <h4>Nosotros</h4>
-        </div> 
-    </div>
-    </div>
 </div> 
 
 <div id="contact">
@@ -356,14 +274,27 @@
         <div class="column_12 text center bck theme rounded">
             <h4>Buscanos en :</h4>
         </div> 
-        <div class="column_12 bck dark rounded margin_top_4" >
-            <a href="htpps://facebook.com/YetsuPe"><i class="icon-facebook icon-4x text color white"></i></a>
-            <a href="https://twitter.com/YetsuPe"><i class="icon-twitter icon-4x text color white"></i></a>
-            <i class="icon-google-plus icon-4x text color white"></i>
-            <i class="icon-pinterest icon-4x text color white"></i>
-            <i class="icon-linkedin icon-4x text color white"></i>
-            <i class="icon-github icon-4x text color white"></i>
-            <i class="icon-tumblr icon-4x text color white"></i>
+    </div>
+    <div class="row margin_top_5">
+        <div class="column_2 text center padding_top padding_bottom bck white rounded">
+            <a href="https://facebook.com/YetsuPe"><i class="icon-facebook icon-4x reds fb icon-4x "></i></a>
+        </div>
+        <div class="column_2 text center padding_top padding_bottom offset_8 bck white rounded">
+            <a href="http://pinterest.com/yetsupe/"><i class="icon-pinterest icon-2x reds pinterest icon-4x block"></i></a>
+            <a data-pin-do="buttonFollow" href="http://pinterest.com/yetsupe/">Yetsu</a>
+        </div>
+    </div>
+    <div class="row margin_top_5">
+        <div class="column_2 text center padding_top padding_bottom bck white rounded">
+            <a href="https://twitter.com/YetsuPe"><i class="icon-twitter icon-4x reds twitter "></i></a>
+        </div>
+        <div class="column_2 text center padding_top padding_bottom offset_8 bck white rounded">
+            <a href="https://plus.google.com/113323301605684841055"><i class="icon-google-plus icon-4x reds gplus"></i></a>
+        </div>
+    </div>
+    <div class="row margin_top_5">
+        <div class="column_2 text center padding_top padding_bottom bck white rounded">
+             <a href="https://github.com/YETSU"><i class="icon-github icon-4x reds github "></i></a>
         </div>
     </div>
 </div> 
@@ -372,8 +303,10 @@
 <script src="js/libs/jquery.localscroll-1.2.7-min.js"></script>
 <script src="js/libs/jquery.scrollTo-1.4.2-min.js"></script>
 <script src="js/libs/jquery.inview.js"></script>
+<!--<script src="https://assets.pinterest.com/js/pinit.js"></script>-->
 
-<script type="text/javascript">
+<!--<script src='js/libs/require.js' data-main='js/main.js'>-->
+<script>
 $(document).ready(function(){
     $('#nav').localScroll();
     $('nav').localScroll();

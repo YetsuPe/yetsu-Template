@@ -21,7 +21,10 @@ header {
   color: #cd2126;
 }
 .reds.github {
-  color: #a2a2a0;
+  color: #333;
+}
+.reds.github_white {
+  color: #fff;
 }
 .img_flex {
   width: 100%;
@@ -177,6 +180,20 @@ header {
   -o-border-radius: 30px;
   border-radius: 30px;
 }
+.rounded-left-teacher {
+  -webkit-border-radius: 80px 15px 0 15px;
+  -moz-border-radius: 80px 15px 0 15px;
+  -ms-border-radius: 80px 15px 0 15px;
+  -o-border-radius: 80px 15px 0 15px;
+  border-radius: 80px 15px 0 15px;
+}
+.rounded-right-teacher {
+  -webkit-border-radius: 15px 80px 15px 0;
+  -moz-border-radius: 15px 80px 15px 0;
+  -ms-border-radius: 15px 80px 15px 0;
+  -o-border-radius: 15px 80px 15px 0;
+  border-radius: 15px 80px 15px 0;
+}
 /***************** Web yetsu ****************************/
 .perfect-rounded {
   -webkit-border-radius: 50%;
@@ -209,4 +226,7 @@ header {
   -ms-box-shadow: 0 0 1px 2px #000 inset;
   -o-box-shadow: 0 0 1px 2px #000 inset;
   box-shadow: 0 0 1px 2px #000 inset;
+}
+#footerHome {
+  position: relative;
 }

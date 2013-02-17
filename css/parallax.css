@@ -11,15 +11,13 @@
 
 #home {
 	background:url(../images/landing-yetsu.jpg) 50% 0 no-repeat fixed #0D9AF6;
-	color: #FFF;
 	/*height:600px;*/
 	margin: 0;
 	/*padding-bottom: 150px;	*/
 }
 
 #works {
-	/*background:url(../images/Publucidad-Yetsu.jpg) 50% 0 no-repeat fixed #83E8F4;*/
-	/*background: #8FA449;*/
+	background:url(../images/pattern_017.png) 50% 0 fixed #1A4B3F;
 	color: #FFF;
 	/*height: 1300px;*/
 	margin: 0 auto;
@@ -226,4 +224,10 @@
 }
 .timeline{
   background : url('../images/content/timeline-center-bar.png') repeat;
+}
+
+.bck .yetsu-dark{
+  background-image: url('../images/pattern_004.png');
+  background-repeat: repeat;
+  background-color:#313131;
 }

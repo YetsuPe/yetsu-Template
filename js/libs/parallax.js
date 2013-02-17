@@ -1,7 +1,6 @@
 // JavaScript Document
 
 $(document).ready(function() {
-
 	var $window = $(window);
 	var $home = $('#home');
 	var $two = $('#two');
@@ -34,9 +33,16 @@ $(document).ready(function() {
 		var widthScreen=window.innerWidth;
 		var heigthScreen=window.innerHeight;
 		var altoHome = $home.height() ;
+		var footerHome=$('#footerHome'); 
+		var top =  heigthScreen - altoHome;
+		//alert(top);
 		if (widthScreen>768){ 
 			if (heigthScreen> altoHome ) {
 				var res = heigthScreen-altoHome;
+				$('#footerHome').css({
+					'position' : 'relative',
+					'top': top+'px'
+				});
 				return (res+'px');
 			}else{
 				return ('20px');
@@ -48,20 +54,26 @@ $(document).ready(function() {
 	function alto(){
 		var alto =windowHeight-621; //obtener top
 		if(alto>=0){
+
 			return alto;
 		}else{
 			return 0 ;
 		}
 	}
-	
+	function topFooterHome () {
+			var footerHome=$('#footerHome'); 
+			var top =  windowHeight-$home.height()-footerHome.height(); //obtener top
+			return ""+top+"px";
+		}	
 	function Parallax(){ 
-		var pos = $window.scrollTop(); 
+		var pos = $window.scrollTop();
 		var alto =windowHeight-621; //obtener top
+
 		if($home.hasClass("inview")){
 			$home.css({
-				'backgroundPosition': "50% "+ alto+'px ',
+				'backgroundPosition': "50% "+ alto+'px ' ,
 				'padding-bottom' : height() 
-			}); 
+			});
 		}
 		if($two.hasClass("inview")){
 			$two.css({
