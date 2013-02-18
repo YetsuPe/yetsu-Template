@@ -1,10 +1,8 @@
 @font-face {
 	font-family: 'yet-icons';
 	src:url('fonts/yet-icons.eot');
-	src:url('fonts/yet-icons.eot?#iefix') format('embedded-opentype'),
-		url('fonts/yet-icons.woff') format('woff'),
-		url('fonts/yet-icons.ttf') format('truetype'),
-		url('fonts/yet-icons.svg#yet-icons') format('svg');
+	src:url('fonts/yet-icons.woff') format('woff'),
+		url('fonts/yet-icons.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
