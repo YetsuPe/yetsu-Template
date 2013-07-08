@@ -1,0 +1,96 @@
+h1
+	display:inline-block
+body
+	//overflow: hidden
+header,section,footer
+	position: relative
+	clear: both
+	background-color #005588
+	left: 0
+	transition(left 0.4s ease-in-out)
+header
+	&>div 
+		padding: .2em 0
+	& *
+		color: #F2F2F2 
+	& em
+		display:block;
+		text-align:center	
+
+bck=#002255
+
+.services
+	.item
+		text-align center
+	for item in 1 2 3
+		.item:nth-child({item})
+			>figcaption,>div
+				float left
+				min-height 50px
+			>figcaption
+				color white
+				width: 20%
+				background-color:bck*item
+			>div
+				width: 80%
+				background-color:bck*2*item
+
+.logo-circle
+	display block
+	width 50%
+	margin 0 auto
+	border-radius:50%
+	border 4px solid #fff
+
+footer
+	background-color: #424242
+	padding: 10px 0
+
+.us
+	& h2
+		text-align center
+		padding 2% 0
+		background-color #181860
+		color white	
+.fix
+	overflow hidden
+	& .yetMenber
+		float:left
+		position: relative
+		text-align center
+		&>img 
+			border 2px solid white
+		& a 
+			display block
+			color white
+		
+		&:nth-child(1),&:nth-child(2),&:nth-child(3)
+			width:33%
+			top 60px
+			/*width 34%*/
+			&>img 
+				width 70%
+				display:block
+				margin 0 auto
+				border-radius 50%
+		&:nth-child(2)
+			top 0px
+		&:nth-child(5),&:nth-child(6),&:nth-child(7),&:nth-child(8)
+			top -100px
+			width 25%
+			& img
+				width:100%
+				border-radius 50%
+		&:nth-child(6),&:nth-child(7)
+			top:-9px
+		&:nth-child(6)
+			left:-7px
+		&:nth-child(7)
+			right:-7px
+		/*&:nth-child(5),&:nth-child(6)
+			top 20px
+			width 25%
+			& img
+				width:100%*/
+
+

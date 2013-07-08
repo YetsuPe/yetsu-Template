@@ -1,0 +1,63 @@
+h1 {
+  display: inline-block;
+}
+header,
+section,
+footer {
+  position: relative;
+  left: 0;
+}
+header>div {
+  padding: 0.2em 0;
+}
+header * {
+  color: #f2f2f2;
+}
+header em {
+  display: block;
+  text-align: center;
+}
+.services .item:nth-child(1) clear: both figcaption {
+  float: 30%;
+  background-color: #04a;
+}
+.services .item:nth-child(1) clear: both>div {
+  float: 70%;
+  background-color: #08f;
+}
+.services .item:nth-child(2) clear: both figcaption {
+  float: 30%;
+  background-color: #04a;
+}
+.services .item:nth-child(2) clear: both>div {
+  float: 70%;
+  background-color: #08f;
+}
+.services .item:nth-child(3) clear: both figcaption {
+  float: 30%;
+  background-color: #04a;
+}
+.services .item:nth-child(3) clear: both>div {
+  float: 70%;
+  background-color: #08f;
+}
+/*.item
+	clear: both
+	margin: 0
+	& figcaption
+		float:left
+		width:30%
+		background-color:#3299BB
+		text-align center
+		min-height: 50px
+		color:white
+	& div
+		background-color:#FE3942
+		float:left
+		width:70%
+		text-align center
+		min-height: 50px
+*/
+footer {
+  background-color: #424242;
+}

@@ -1,0 +1,54 @@
+html 
+	font-size:75%
+
+h1
+	margin : 0
+	font-size:1rem 
+h2
+	font-size:.9rem
+h3
+	font-size:.8rem
+
+
+//******************** MEDIA QUERIES *******************************/
+@media only screen and (min-width: 320px) 
+	html 
+		font-size: 81.25% /* 13px */
+@media only screen and (min-width: 480px) 
+	html 
+		font-size: 87.5%  /* 14px */
+@media only screen and (min-width: 768px) 
+	html 
+		font-size: 92%   
+	[data-yetsu="menu"]
+		left: 0
+		width: 100%
+		position: relative
+		overflow-y: auto
+		& > a
+			display: inline-block
+			border-bottom: 0 
+
+	[data-yetsu="ico-menu"]
+		z-index -1
+
+	header
+		position absolute
+		width 100%
+		& div
+			& h1
+				padding 0 25px
+				color #003B5F
+				position absolute
+				z-index 3
+				right 15px
+				font-size 1.5rem
+	[data-yetsu="logo"]
+		padding 0
+		border-radius: 0
+		margin-right 15px 
+		
+@media only screen and (min-width: 960px) 
+	html 
+		font-size: 100%
+	
